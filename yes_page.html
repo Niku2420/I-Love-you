@@ -20,14 +20,39 @@
     </div>
 
     <div class="container">
+        
         <h1 class="header_text">Knew you would say yes!</h1>
+        <h1 class="header_text"> Click on the screen for Music</h2>
         
         <div class="gif_container">
             <img src="https://i.pinimg.com/originals/65/ce/b7/65ceb77f696e027a512524a58b2cfd40.gif">
             <img src="https://media1.tenor.com/m/MKvbtQd5cpMAAAAC/mintyai4.gif">
         </div>
+        
         <h1 class="header_text">With every beat of my heart I Love you ji</h1> 
         <h1 class="header_text">and you are the most important part of my life.</h1>
     </div>
+    <audio id="background-music" autoplay loop>
+    <source src="song.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const audio = document.getElementById("background-music");
+
+        // Try playing the audio
+        audio.volume = 0.5; // Set volume to 50%
+        audio.play().catch(error => {
+            console.log("Autoplay blocked. Trying again after user interaction.");
+            
+            // If autoplay is blocked, play after user interacts with the page
+            document.body.addEventListener("click", function() {
+                audio.play();
+            }, { once: true }); // Runs only once
+        });
+    });
+</script>
+
+    
 </body>
 </html>
