@@ -79,3 +79,52 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* Back Button Styling */
+#back-page-btn {
+    background-color: #ff4d6d;
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Hover effect */
+#back-page-btn:hover {
+    background-color: #e63950;
+}
+.message {
+    color: #ff4d6d;  /* Match video theme */
+    font-size: 18px; /* Adjust size for readability */
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ff4d6d; /* Match the theme */
+    border-radius: 15px;
+    padding: 10px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+
