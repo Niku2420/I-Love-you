@@ -57,3 +57,8 @@ function createHeart() {
         heart.remove();
     }, duration * 1000);
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("surprise-video");
+    video.play().catch(error => console.log("Autoplay prevented: " + error));
+});
+
